@@ -57,6 +57,11 @@
 # Youtube
 
 ![YouTube Channel](assets/profile.png)
+
+# My Skills
+
+---
+
 # My Skills
 
 <img src="https://skillicons.dev/icons?i=c,python,html,css,mysql,github,vscode,django,unity,arduino" />
