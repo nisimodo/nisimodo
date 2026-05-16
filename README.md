@@ -1,5 +1,7 @@
 # Student living in Japan 👋
 
+
+
 ### Hi, I'm nisimodo
 ### I'm a 19-year-old programmer
 ### Please feel free to contact me anytime 👍
@@ -52,6 +54,9 @@
 
 ---
 
+# Youtube
+
+![YouTube Channel](assets/profile.png)
 # My Skills
 
 <img src="https://skillicons.dev/icons?i=c,python,html,css,mysql,github,vscode,django,unity,arduino" />
@@ -75,8 +80,6 @@
 # Development Environment
 
 ```txt
-OS        : Windows / Linux
+OS        : Windows / mac
 Editor    : VSCode
-Container : Docker
-Cloud     : AWS
-Database  : MySQL / SQLite
+Database  : MySQL
