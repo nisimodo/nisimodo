@@ -1,8 +1,8 @@
-# Backend Developer in Japan 👋
+# Student living in Japan 👋
 
 ### Hi, I'm nisimodo
-### 20 years old Backend Developer
-### Feel free to contact me anytime 👍
+### I'm a 19-year-old programmer
+### Please feel free to contact me anytime 👍
 
 #
 
@@ -13,16 +13,16 @@
 [![trophy](https://github-profile-trophy.vercel.app/?username=nisimodo&theme=discord)](https://github.com/nisimodo)
 
 [![My Twitter Followers](https://badgen.net/twitter/follow/nisiomodoki)](https://twitter.com/nisiomodoki)
+[![My Twitter Followers](https://badgen.net/twitter/follow/nisimodo)](https://twitter.com/nisimodo)
 
 ---
 
 # About Me
 
-- 🔥 Backend Developer based in Japan
-- 💻 Mainly developing with PHP / Laravel / TypeScript
-- 🚀 Interested in Cloud, Docker, AWS and Modern Frontend
-- 🌱 Currently learning scalable backend architecture
-- 🎯 Goal: Build useful services used by many people
+- 🔥 Student based in Japan
+- 💻 Mainly using C / HTML / CSS / Scratch
+- 🎬 Enjoy editing videos with YMM4
+- 📺 Posting Yukkuri skits and gameplay videos on YouTube
 
 ---
 
@@ -30,7 +30,19 @@
 
 <p align="left">
   <a href="https://twitter.com/nisiomodoki" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter" height="30" width="40" />
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter_Main account" height="30" width="40" />
+  </a>
+
+  <a href="https://twitter.com/nisimodo" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter_Sub account" height="30" width="40" />
+  </a>
+
+  <a href="https://youtube.com/@nisimodo" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="Youtube_Main account" height="30" width="40" />
+  </a>
+
+  <a href="https://youtube.com/@nisimodo_sub" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="Youtube_Main account" height="30" width="40" />
   </a>
 
   <a href="mailto:nisiomodoki240@gmail.com">
@@ -42,15 +54,15 @@
 
 # My Skills
 
-<img src="https://skillicons.dev/icons?i=c,python,html,css,mysql,github,vscode,Django" />
+<img src="https://skillicons.dev/icons?i=c,python,html,css,mysql,github,vscode,django,unity,arduino" />
 
 ### Other Skills / Tools
 
-- CodeIgniter
-- CircleCI
-- VirtualBox
-- REST API Development
-- Linux Server Management
+- Scratch
+- Maya
+- Autdesk Fusion360
+- ゆっくりMovie Maker4
+- AviUtl
 
 ---
 
