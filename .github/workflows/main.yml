@@ -14,6 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
+          token: ${{ secrets.REPO_PUSH_TOKEN }}
           persist-credentials: true
 
       - name: Set up Python
@@ -33,9 +34,12 @@ jobs:
           python scripts/generate_youtube_profile.py --query nisimodo --output assets/profile.png --readme README.md
 
       - name: Commit and push
+        env:
+          PUSH_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/nisimodo/nisimodo.git
           git add assets/profile.png README.md || true
           if ! git diff --cached --quiet; then
             git commit -m "Update YouTube profile image"
