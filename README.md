@@ -58,8 +58,6 @@
 
 ![YouTube Channel](assets/profile.png)
 
-# My Skills
-
 ---
 
 # My Skills
