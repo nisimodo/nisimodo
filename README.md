@@ -12,8 +12,6 @@
 
 ![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=nisimodo&layout=compact&theme=vue-dark)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=nisimodo&theme=discord)](https://github.com/nisimodo)
-
 [![My Twitter Followers](https://badgen.net/twitter/follow/nisiomodoki)](https://twitter.com/nisiomodoki)
 [![My Twitter Followers](https://badgen.net/twitter/follow/nisimodo)](https://twitter.com/nisimodo)
 
