@@ -30,7 +30,7 @@ jobs:
 
       - name: Generate profile image
         env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_API_KEY: ${{ "AIzaSyCX3JaQV5iy2IrG3t15FOGuul3xIxKK6oE" }}
         run: |
           python scripts/generate_youtube_profile.py --query nisimodo --output assets/profile.png --readme README.md
 
