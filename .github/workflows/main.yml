@@ -1,6 +1,7 @@
 name: Update YouTube Profile Image
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
 
@@ -10,12 +11,14 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v5
         with:
           token: ${{ secrets.REPO_PUSH_TOKEN }}
           persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,7 +34,10 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
-          python scripts/generate_youtube_profile.py --query nisimodo --output assets/profile.png --readme README.md
+          python scripts/generate_youtube_profile.py \
+            --query nisimodo \
+            --output assets/profile.png \
+            --readme README.md
 
       - name: Commit and push
         env:
@@ -39,11 +45,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/nisimodo/nisimodo.git
+
           git add assets/profile.png README.md || true
+
           if ! git diff --cached --quiet; then
             git commit -m "Update YouTube profile image"
-            git push
+
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi
