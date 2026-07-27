@@ -53,7 +53,7 @@ def get_channel_info(api_key, channel_id):
     item = items[0]
     snippet = item.get('snippet', {})
     stats = item.get('statistics', {})
-    title = snippet.get('title', '')
+    title = "にしもど"
     subs = stats.get('subscriberCount', '0')
     thumbnails = snippet.get('thumbnails', {})
     # prefer high quality
