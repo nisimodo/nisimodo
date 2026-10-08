@@ -8,12 +8,12 @@
 
 #
 
-![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=nisimodo&show_icons=true&theme=vue-dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=nisimodo&show_icons=true&theme=vue-dark)
 
-![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=nisimodo&layout=compact&theme=vue-dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nisimodo&layout=compact&theme=vue-dark)
 
-[![My Twitter Followers](https://badgen.net/twitter/follow/nisiomodoki)](https://twitter.com/nisiomodoki)
-[![My Twitter Followers](https://badgen.net/twitter/follow/nisimodo)](https://twitter.com/nisimodo)
+[![X @nisiomodoki](https://img.shields.io/badge/@nisiomodoki-000000?style=flat&logo=x&logoColor=white)](https://x.com/nisiomodoki)
+[![X @nisimodo](https://img.shields.io/badge/@nisimodo-000000?style=flat&logo=x&logoColor=white)](https://x.com/nisimodo)
 
 ---
 
@@ -42,7 +42,7 @@
   </a>
 
   <a href="https://youtube.com/@nisimodo_sub" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="Youtube_Main account" height="30" width="40" />
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="Youtube_Sub account" height="30" width="40" />
   </a>
 
   <a href="mailto:nisiomodoki240@gmail.com">
@@ -66,7 +66,7 @@
 
 - Scratch
 - Maya
-- Autdesk Fusion360
+- Autodesk Fusion360
 - ゆっくりMovie Maker4
 - AviUtl
 

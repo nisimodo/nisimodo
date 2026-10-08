@@ -100,9 +100,13 @@ def create_profile_image(icon_img, title, subs, out_path, size=(1200,360)):
     name_size = max(56, int(inner_h * 0.32))
     small_label_size = max(18, int(inner_h * 0.08))
 
-    font_path = os.environ.get('PROFILE_FONT') or '/Users/nm/vantan/テスト用/画像化/Corporate-Logo-Bold-ver3.otf'
+    # use the font bundled in this repo so the result is the same locally and on GitHub Actions
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    font_path = os.environ.get('PROFILE_FONT') or os.path.join(repo_root, 'Corporate-Logo-Bold-ver3.otf')
     if not os.path.isfile(font_path):
         font_path = find_japanese_font()
+    if not font_path:
+        raise RuntimeError('Japanese font not found')
     try:
         font_num = ImageFont.truetype(font_path, big_num_size)
         font_name = ImageFont.truetype(font_path, name_size)
@@ -134,21 +138,17 @@ def create_profile_image(icon_img, title, subs, out_path, size=(1200,360)):
         subs_val = str(subs_num)
 
     # measure text sizes
-    try:
-        num_w, num_h = font_num.getsize(subs_val)
-    except Exception:
-        num_w, num_h = (len(subs_val) * big_num_size // 2, big_num_size)
-    try:
-        label_w, label_h = font_label.getsize(label)
-    except Exception:
-        label_w, label_h = (len(label) * small_label_size, small_label_size)
+    # (FreeTypeFont.getsize was removed in Pillow 10, so use getbbox)
+    num_l, num_t, num_r, num_b = font_num.getbbox(subs_val)
+    label_l, label_t, label_r, label_b = font_label.getbbox(label)
+    label_w = label_r - label_l
 
     # bottom baseline coordinate (distance above card bottom)
     baseline_bottom = inner_y1 - 40
 
-    # compute y positions so bottoms align
-    num_y = baseline_bottom - num_h
-    label_y = baseline_bottom - label_h
+    # compute y positions so the visible bottoms align
+    num_y = baseline_bottom - num_b
+    label_y = baseline_bottom - label_b
 
     label_x = padding_left
     num_x = label_x + label_w + 12
